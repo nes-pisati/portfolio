@@ -1,0 +1,58 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+
+
+@theme {
+  /* --color-beige: #DED4C0; */
+  --main-font: "Plus Jakarta Sans", sans-serif;
+  --secondary-font: "Great Vibes", cursive;
+}
+
+/* Chrome, Safari, Edge */
+::-webkit-scrollbar {
+  display: none;
+}
+
+/* Firefox */
+* {
+  scrollbar-width: none;
+}
+
+/* IE / Edge legacy */
+* {
+  -ms-overflow-style: none;
+}
+
+
+html,
+body {
+  width: 100%;
+  background-color: black;
+  color: white;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  font-family: var(--main-font);
+  padding: 0 2em;
+}
+
+p {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 1.25em;
+}
+
+.section-title {
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 2.25em;
+}
+
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
+
+@utility padding-x {
+  @apply pl-20 pr-20
+}
