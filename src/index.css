@@ -49,6 +49,19 @@ p {
   font-size: 2.25em;
 }
 
+/* Menu */
+.menu-item {
+  font-family: var(--main-font);
+  font-weight: 200;
+  font-size: 1em;
+  opacity: 0.5;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.menu-item:hover {
+  opacity: 1;
+}
+
 @utility flex-center {
   @apply flex justify-center items-center;
 }
