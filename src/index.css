@@ -31,7 +31,6 @@ body {
   background-color: black;
   color: white;
   scroll-behavior: smooth;
-  overflow-x: hidden;
   font-family: var(--main-font);
   padding: 0 4em;
 }
@@ -77,6 +76,12 @@ p {
   font-size: 4em;
   opacity: 0.5;
   line-height: 1.2;
+}
+
+.divisor-text {
+  font-size: 2em;
+
+  @apply uppercase text-center;
 }
 
 @utility flex-center {

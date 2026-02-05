@@ -1,10 +1,11 @@
 import Hero from "../components/homepage/Hero";
+import Divisor from "../components/ui-kit/Divisor";
 
 export default function Homepage() {
     return (
         <>
             <Hero />
-            {/* SCROLLABLE DIVISOR */}
+            <Divisor text="About" />
             {/* ABOUT SECTION */}
             {/* SKILLS SECTION */}
             {/* SCROLLABLE DIVISOR */}
