@@ -1,14 +1,13 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 
-
-
-@theme {
-  /* --color-beige: #DED4C0; */
+:root {
   --main-font: "Plus Jakarta Sans", sans-serif;
   --secondary-font: "Great Vibes", cursive;
 }
+
+@import "tailwindcss";
+
 
 /* Chrome, Safari, Edge */
 ::-webkit-scrollbar {
@@ -34,11 +33,10 @@ body {
   scroll-behavior: smooth;
   overflow-x: hidden;
   font-family: var(--main-font);
-  padding: 0 2em;
+  padding: 0 4em;
 }
 
 p {
-  font-family: var(--main-font);
   font-weight: 400;
   font-size: 1.25em;
 }
@@ -60,6 +58,25 @@ p {
 
 .menu-item:hover {
   opacity: 1;
+}
+
+.hero-text {
+  font-family: var(--main-font);
+  font-weight: 400;
+
+  @apply text-8xl
+}
+
+.hero-text-span {
+  font-family: var(--secondary-font);
+}
+
+.sliding-text {
+  font-family: var(--main-font);
+  font-weight: 600;
+  font-size: 4em;
+  opacity: 0.5;
+  line-height: 1.2;
 }
 
 @utility flex-center {
