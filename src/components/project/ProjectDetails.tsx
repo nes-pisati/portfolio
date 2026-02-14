@@ -1,7 +1,7 @@
 export default function ProjectDetails() {
     return (
-        <section className="grid grid-cols-2 gap-20 py-10">
-            <div className="flex flex-col justify-between">
+        <section className="project-details-section">
+            <div className="project-details-content">
                 <div>
                     <h2 className="project-detail-title">Antidea</h2>
                     <p>Project Description</p>
@@ -14,7 +14,7 @@ export default function ProjectDetails() {
                 </div>
             </div>
             <div>
-                <img src="https://images.unsplash.com/photo-1770386750279-1222d8f188a7?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project foto" className="h-[110vh] w-[50vw] object-cover" />
+                <img src="https://images.unsplash.com/photo-1770386750279-1222d8f188a7?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project foto" className="project-details-img" />
             </div>
         </section>
     )

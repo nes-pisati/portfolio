@@ -1,18 +1,18 @@
 export default function ImagesGrid() {
     return (
-        <section className="grid grid-cols-3 gap-5 py-10">
-            <div className="col-span-1">
-                <img src="https://images.unsplash.com/photo-1770386750279-1222d8f188a7?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project foto" className="h-full w-[50vw] object-cover" />
+        <section className="images-grid-section">
+            <div className="images-grid-left-col">
+                <img src="https://images.unsplash.com/photo-1770386750279-1222d8f188a7?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project foto" className="images-grid-left-img" />
             </div>
-            <div className="col-span-2">
-                <div className="grid grid-cols-2 gap-5">
-                    <div className="col-span-2">
-                        <img src="https://images.unsplash.com/photo-1770386750279-1222d8f188a7?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project foto" className="h-[50vh] w-[70vw] object-cover" />
+            <div className="images-grid-right-col">
+                <div className="images-grid-right-inner">
+                    <div className="images-grid-full-span">
+                        <img src="https://images.unsplash.com/photo-1770386750279-1222d8f188a7?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project foto" className="images-grid-top-img" />
                     </div>
-                    <div className="col-span-2">
-                        <div className="flex justify-between gap-5">
-                            <img src="https://images.unsplash.com/photo-1770386750279-1222d8f188a7?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project foto" className="h-[60vh] w-[30vw] object-cover" />
-                            <img src="https://images.unsplash.com/photo-1770386750279-1222d8f188a7?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project foto" className="h-[60vh] w-[25vw] object-cover" />
+                    <div className="images-grid-full-span">
+                        <div className="images-grid-bottom-row">
+                            <img src="https://images.unsplash.com/photo-1770386750279-1222d8f188a7?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project foto" className="images-grid-bottom-img-1" />
+                            <img src="https://images.unsplash.com/photo-1770386750279-1222d8f188a7?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Project foto" className="images-grid-bottom-img-2" />
                         </div>
                     </div>
                 </div>

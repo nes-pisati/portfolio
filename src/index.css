@@ -32,7 +32,15 @@ body {
   color: white;
   scroll-behavior: smooth;
   font-family: var(--main-font);
-  padding: 0 4em;
+  padding: 0 1em;
+}
+
+@media (min-width: 768px) {
+
+  html,
+  body {
+    padding: 0 4em;
+  }
 }
 
 p {
@@ -93,10 +101,7 @@ p {
 }
 
 .tech-description {
-  font-size: 0.9em;
-  line-height: 1.5;
-  opacity: 0.5;
-  max-width: 35vw
+  @apply text-sm leading-relaxed opacity-50 max-w-full md:max-w-[35vw] text-justify md:text-left;
 }
 
 .tech-title {
@@ -114,12 +119,7 @@ p {
   font-size: 1em;
 }
 
-.project-name {
-  font-size: 30em;
-  font-weight: 600;
-  line-height: 1;
-  white-space: nowrap
-}
+
 
 .project-detail-title {
   font-size: 2.5em;
@@ -131,5 +131,85 @@ p {
 }
 
 @utility padding-x {
-  @apply pl-20 pr-20
+  @apply pl-6 pr-6 md:pl-20 md:pr-20
+}
+
+.project-hero-section {
+  @apply flex flex-col items-center justify-center h-[50vh] md:h-screen;
+}
+
+.project-hero-img {
+  @apply w-full h-[60%] md:h-[200px] object-cover;
+}
+
+.project-info-section {
+  @apply flex flex-col justify-between py-20 md:py-40 min-h-screen h-auto;
+}
+
+.project-info-row {
+  @apply flex flex-col md:flex-row justify-between opacity-50 gap-4 md:gap-0;
+}
+
+.project-info-technologies {
+  @apply flex flex-col items-start md:items-end gap-2 md:gap-10;
+}
+
+.project-details-section {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 py-10;
+}
+
+.project-details-content {
+  @apply flex flex-col justify-between gap-10 md:gap-0;
+}
+
+.project-details-img {
+  @apply h-[50vh] md:h-[110vh] w-full md:w-[50vw] object-cover;
+}
+
+.images-grid-section {
+  @apply grid grid-cols-1 md:grid-cols-3 gap-5 py-10;
+}
+
+.images-grid-left-col {
+  @apply col-span-1;
+}
+
+.images-grid-left-img {
+  @apply h-[50vh] md:h-full w-full md:w-[50vw] object-cover;
+}
+
+.images-grid-right-col {
+  @apply col-span-1 md:col-span-2;
+}
+
+.images-grid-right-inner {
+  @apply grid grid-cols-1 md:grid-cols-2 gap-5;
+}
+
+.images-grid-full-span {
+  @apply col-span-1 md:col-span-2;
+}
+
+.images-grid-top-img {
+  @apply h-[50vh] w-full md:w-[70vw] object-cover;
+}
+
+.images-grid-bottom-row {
+  @apply flex flex-col md:flex-row justify-between gap-5;
+}
+
+.images-grid-bottom-img-1 {
+  @apply h-[50vh] md:h-[60vh] w-full md:w-[30vw] object-cover;
+}
+
+.images-grid-bottom-img-2 {
+  @apply h-[50vh] md:h-[60vh] w-full md:w-[25vw] object-cover;
+}
+
+.divisor-section {
+  @apply relative py-2 min-h-15 border-y flex items-center w-screen left-1/2 -translate-x-1/2 overflow-hidden;
+}
+
+.divisor-content {
+  @apply absolute flex gap-4 whitespace-nowrap;
 }
