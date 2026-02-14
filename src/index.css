@@ -90,7 +90,7 @@ p {
 .divisor-text {
   font-size: 2em;
 
-  @apply uppercase text-center;
+  @apply uppercase md:text-center;
 }
 
 .about-text {
@@ -119,10 +119,13 @@ p {
   font-size: 1em;
 }
 
-
-
 .project-detail-title {
   font-size: 2.5em;
+  font-weight: 600;
+}
+
+.project-name {
+  font-size: 30em;
   font-weight: 600;
 }
 
@@ -139,7 +142,7 @@ p {
 }
 
 .project-hero-img {
-  @apply w-full h-[60%] md:h-[200px] object-cover;
+  @apply w-full h-[30vh] md:h-[200px] object-cover;
 }
 
 .project-info-section {
@@ -207,9 +210,44 @@ p {
 }
 
 .divisor-section {
-  @apply relative py-2 min-h-15 border-y flex items-center w-screen left-1/2 -translate-x-1/2 overflow-hidden;
+  @apply relative md:py-2 py-1 min-h-15 border-y flex items-center w-screen left-1/2 -translate-x-1/2 overflow-hidden;
 }
 
 .divisor-content {
   @apply absolute flex gap-4 whitespace-nowrap;
+}
+
+@media (max-width: 768px) {
+
+  .section-title {
+    font-size: 1.5em;
+  }
+
+  .divisor-text {
+    font-size: 1.2em;
+  }
+
+  .hero-text {
+    font-size: 2em;
+  }
+
+  .sliding-text {
+    font-size: 1.5em;
+  }
+
+  .about-text {
+    font-size: 1.5em;
+  }
+
+  .tech-title {
+    font-size: 2em;
+  }
+
+  .hp-project-title {
+    font-size: 2em;
+  }
+
+  .project-name {
+    font-size: 8em;
+  }
 }

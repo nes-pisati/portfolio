@@ -10,10 +10,9 @@ export default function Hero() {
                 <div className="h-[75vh] flex justify-between absolute top-30 left-40 right-40">
                     <p className="hero-text"><span className="hero-text-span">H</span>e<span className="hero-text-span">ll</span>o, I'm</p>
                     <div className="flex flex-col justify-end">
-                        <img src="../assets/Nes.png" alt="Nes" className="w-200" />
+                        <img src="../assets/Nes.png" alt="Nes" className="md:w-200 w-50" />
                     </div>
                 </div>
-
             </section>
         </>
     )

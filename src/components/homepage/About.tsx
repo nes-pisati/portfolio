@@ -79,8 +79,8 @@ export default function About() {
     // }, []);
 
     return (
-        <section ref={container} className="padding-x pt-10 grid grid-cols-5 gap-10 relative">
-            <div className="col-span-3 flex flex-col pt-[10vh] max-h-[80vh]">
+        <section ref={container} className="padding-x pt-10 md:grid grid-cols-5 gap-10 relative">
+            <div className="col-span-3 flex flex-col pt-[10vh] md:max-h-[80vh] max-h-[50vh]">
                 <BlackShade>
                     <p className="about-text leading-tight">
                         {content.map((item, i) => (
@@ -95,7 +95,7 @@ export default function About() {
                     </p>
                 </BlackShade>
             </div>
-            <div className="col-span-2 relative h-screen sticky top-0 flex items-center justify-center">
+            <div className="col-span-2 relative md:h-screen h-[50vh] sticky top-0 flex items-center justify-center">
                 {content.map((item, i) => (
                     <img
                         key={i}
