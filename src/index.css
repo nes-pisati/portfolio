@@ -114,6 +114,18 @@ p {
   font-size: 1em;
 }
 
+.project-name {
+  font-size: 30em;
+  font-weight: 600;
+  line-height: 1;
+  white-space: nowrap
+}
+
+.project-detail-title {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
 @utility flex-center {
   @apply flex justify-center items-center;
 }

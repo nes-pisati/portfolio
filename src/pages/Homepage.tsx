@@ -3,7 +3,6 @@ import Hero from "../components/homepage/Hero";
 import Projects from "../components/homepage/Projects";
 import Technologies from "../components/homepage/Technologies";
 import Divisor from "../components/ui-kit/Divisor";
-import Footer from "../components/ui-kit/Footer";
 
 export default function Homepage() {
     return (
@@ -14,7 +13,6 @@ export default function Homepage() {
             <Technologies />
             <Divisor text="Projects" />
             <Projects />
-            <Footer />
         </>
     )
 }
