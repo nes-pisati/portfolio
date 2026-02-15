@@ -1,6 +1,6 @@
 export default function Technologies() {
     return (
-        <section className="padding-x py-10">
+        <section className="padding-x py-10 h-[90vh]">
             <h2 className="section-title">Technologies</h2>
             <p className="tech-description py-10">I’m a frontend developer who enjoys building interfaces that are clean, functional, and easy to maintain. My stack is centered around JavaScript, React, and modern tooling, but I’m always open to learning new languages and frameworks.</p>
             <div className="md:grid grid-cols-4 gap-10 py-10">
