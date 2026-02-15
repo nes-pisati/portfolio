@@ -46,7 +46,7 @@ export default function ProjectHero() {
                 scrollTrigger: {
                     trigger: sectionRef.current,
                     start: "top top",
-                    end: "+=120%",
+                    end: "+=100%",
                     scrub: true,
                     pin: true,
                     invalidateOnRefresh: true
@@ -54,14 +54,14 @@ export default function ProjectHero() {
             })
 
             tl.to(".project-hero-img", {
-                clipPath: "inset(0% 0% 65% 0%)",
+                clipPath: "inset(0% 0% 20% 0%)",
                 ease: "none"
             })
 
             tl.fromTo(".project-hero-name",
                 { x: window.innerWidth },
-                { x: 0, ease: "power2.out" },
-                "+=0.1"
+                { x: -window.innerWidth * 0.001, ease: "power2.out" },
+                "+=0.2"
             )
 
         })

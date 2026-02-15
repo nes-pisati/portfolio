@@ -93,8 +93,12 @@ p {
   text-align: justify;
 }
 
+.about-text span {
+  display: inline;
+}
+
 .tech-description {
-  @apply text-sm leading-relaxed opacity-50 max-w-full md:max-w-[35vw] text-justify md:text-left;
+  @apply text-sm opacity-50 w-screen text-justify md:text-left;
 }
 
 .tech-title {
@@ -140,6 +144,7 @@ p {
   position: absolute;
   inset: 0;
   overflow: hidden;
+  z-index: 5;
 }
 
 .project-hero-img {
@@ -186,27 +191,27 @@ p {
 }
 
 .project-details-section {
-  @apply relative grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-20 py-20 h-[150vh] overflow-hidden;
+  @apply relative flex flex-col md:grid md:grid-cols-2 gap-10 md:gap-20 py-20 min-h-screen md:h-[150vh] overflow-hidden;
 }
 
 .project-details-content {
-  @apply flex flex-col justify-between relative z-10 gap-10 md:gap-0;
+  @apply contents md:flex md:flex-col md:justify-between md:relative md:z-10 md:gap-0;
 }
 
 .project-detail-title {
-  @apply text-4xl md:text-6xl font-semibold tracking-tight;
+  @apply text-4xl md:text-6xl font-semibold tracking-tight order-1;
 }
 
 .project-detail-description {
-  @apply text-lg md:text-xl text-neutral-400;
+  @apply text-lg md:text-xl text-neutral-400 order-3 w-full;
 }
 
 .tech-description {
-  @apply text-base md:text-lg leading-relaxed text-neutral-300 max-w-[30vw];
+  @apply text-base md:text-lg leading-relaxed text-neutral-300 w-full md:max-w-[30vw] order-4;
 }
 
 .project-details-img {
-  @apply absolute top-0 right-0 w-full md:w-[40vw] h-[60vh] md:h-[150vh] object-cover opacity-0 pointer-events-none;
+  @apply relative md:absolute md:top-0 md:right-0 w-full md:w-[40vw] h-[50vh] md:h-[150vh] object-cover opacity-0 pointer-events-none order-2;
 }
 
 .grid-image {
@@ -307,5 +312,7 @@ p {
 @media (max-width: 1023px) {
   .project-hero-name {
     font-size: 20vw;
+    top: 85%;
+    z-index: 1;
   }
 }
