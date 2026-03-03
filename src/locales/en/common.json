@@ -1,0 +1,46 @@
+{
+    "downloadCv": "Download my CV",
+    "hero": {
+        "greeting": "Hello, I'm",
+        "role": "FRONTEND DEVELOPER"
+    },
+    "about": {
+        "title": "About",
+        "content": [
+            {
+                "text": "I'm Vanessa, a 30-year-old frontend developer."
+            },
+            {
+                "text": "According to Leonardo Di Caprio, I'm past my expiration date — but for coding, I'm still in excellent shape."
+            },
+            {
+                "text": "I'm still a Padawan? Yes, but every Jedi was once one too and with a great Jedi Master by my side I continue improving in the use of the force and constantly leveling up (bugs included)."
+            },
+            {
+                "text": "My background in branding trained my eye long before my hands touched code, which means UI and UX naturally influence the way I build and think interfaces."
+            },
+            {
+                "text": "I like clean components, thoughtful interactions, and frontend code that doesn't fight back when you open it six months later (hopefully)."
+            },
+            {
+                "text": "And last but not least. If you're wondering how I move within a team, this is how artificial intelligence feels working together with me. Need I say more?"
+            }
+        ]
+    },
+    "technologies": {
+        "title": "Technologies",
+        "description": "My stack is centered around JavaScript, TypeScript, React, Angular and modern tooling, but I'm always open to learning new languages and frameworks.",
+        "frameworks": "Frameworks",
+        "languages": "Languages"
+    },
+    "projects": {
+        "title": "Projects",
+        "view": "VIEW",
+        "details": "DETAILS",
+        "technologies": "TECHNOLOGIES",
+        "seeMore": "SEE MORE",
+        "visitWebsite": "Visit Website",
+        "viewCode": "View Code",
+        "projectPlaylist": "Project Playlist"
+    }
+}

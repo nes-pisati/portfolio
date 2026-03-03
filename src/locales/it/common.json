@@ -1,0 +1,46 @@
+{
+    "downloadCv": "Scarica il mio CV",
+    "hero": {
+        "greeting": "Hello, sono",
+        "role": "FRONTEND DEVELOPER"
+    },
+    "about": {
+        "title": "Chi sono",
+        "content": [
+            {
+                "text": "Sono Vanessa, una sviluppatrice frontend di 30 anni."
+            },
+            {
+                "text": "Secondo Leonardo Di Caprio ho superato la mia data di scadenza, ma per il codice sono ancora in perfetta forma."
+            },
+            {
+                "text": "Sono ancora un Padawan? Sì, ma ogni Jedi lo è stato e con un grande Maestro Jedi al mio fianco continuo a migliorare nell'uso della forza e a salire di livello (bug inclusi)."
+            },
+            {
+                "text": "Il mio background nel branding ha allenato il mio occhio molto prima che le mie mani toccassero il codice, il che significa che UI e UX influenzano naturalmente il modo in cui costruisco e penso le interfacce."
+            },
+            {
+                "text": "Mi piacciono i componenti puliti, le interazioni curate e il codice frontend che non ti prende a pugni in faccia quando lo riapri sei mesi dopo (si spera)."
+            },
+            {
+                "text": "E ultimo, ma non meno importante. Se ti stai chiedendo come mi muovo all'interno di un team, questo è come si sente l'intelligenza artificiale a lavorare insieme a me. Devo aggiungere altro?"
+            }
+        ]
+    },
+    "technologies": {
+        "title": "Tecnologie",
+        "description": "Il mio stack è centrato su JavaScript, TypeScript, React, Angular e strumenti moderni, ma sono sempre aperta all'apprendimento di nuovi linguaggi e framework.",
+        "frameworks": "Frame works",
+        "languages": "Linguaggi"
+    },
+    "projects": {
+        "title": "Progetti",
+        "view": "VEDI",
+        "details": "DETTAGLI",
+        "technologies": "TECNOLOGIE",
+        "seeMore": "SCOPRI DI PIÙ",
+        "visitWebsite": "Visita Sito",
+        "viewCode": "Vedi Codice",
+        "projectPlaylist": "Playlist del Progetto"
+    }
+}
