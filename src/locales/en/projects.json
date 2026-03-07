@@ -12,7 +12,7 @@
         "descriptionText": "For Iron Jiu Jitsu, I developed a team management software with a frontend in React and Vite.js, and a backend in Node.js, Express, and MongoDB. The software allows managing athlete registrations, their insurance and medical certificates, subscriptions, and deadlines with an automated messaging system via WhatsApp API. A financial history feature is currently being implemented."
     },
     "modi": {
-        "name": "MODÌ",
+        "name": "MODÌ ART",
         "details": "Web App Development",
         "description": "Web App Development",
         "descriptionText": "Modì is the Web App I developed as a Capstone Project for the EPICODE Web Development course. The project was selected among the best capstones presented and is a web application that allows both the creation of thematic museum guides and the ability to search and listen to the guides during a museum visit."

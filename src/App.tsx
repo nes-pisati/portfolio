@@ -9,10 +9,11 @@ import ScrollToTop from "./components/ui-kit/ScrollToTop"
 function AppContent() {
   const location = useLocation();
   const isIntro = location.pathname === '/';
+  const isProject = location.pathname.startsWith('/project');
 
   return (
     <>
-      {!isIntro && <Menu backEnabled={false} />}
+      {!isIntro && <Menu backEnabled={isProject} />}
       <Routes>
         <Route path="/" element={<Intro />} />
         <Route path="/home" element={<Homepage />} />

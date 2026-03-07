@@ -15,7 +15,7 @@ export default function Intro() {
     return (
         <section className="h-screen flex flex-col justify-center items-center gap-10">
             <div>
-                <p>Lang</p>
+                <p className='opacity-20'>Lang</p>
             </div>
             <div className='flex gap-10'>
                 <button onClick={() => handleLanguageSelect('it')} className='w-30 h-20 rounded-lg overflow-hidden'>
