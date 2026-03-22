@@ -2,33 +2,39 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from "@gsap/react";
+import vanessa from "../../assets/vanessa.jpg"
+import ai from "../../assets/ai.jpg"
+import { useTranslation } from "react-i18next";
 
 gsap.registerPlugin(ScrollTrigger);
 
-const content = [
-    {
-        text: "I'm Vanessa, a 30-year-old frontend developer. According to Leonardo Di Caprio, I'm past my expiration date — but for code, I'm still in excellent shape. ",
-        img: "https://picsum.photos/400/400?random=1"
-    },
-    {
-        text: "I'm still a Padawan? Yes, but every Jedi was once one too and with a great Jedi Master by my side I continue improving in the use of the force and constantly leveling up (bugs included). ",
-        img: "https://picsum.photos/400/400?random=2"
-    },
-    {
-        text: "My background in branding trained my eye long before my hands touched code, which means UI and UX naturally influence the way I build and think interfaces. ",
-    },
-    {
-        text: "I like clean components, thoughtful interactions, and frontend code that doesn't fight back when you open it six months later (hopefully). ",
-    },
-    {
-        text: "If you're wondering how I move within a team, I can only say this: this is how artificial intelligence feels working together with me. Need I say more?",
-        img: "https://picsum.photos/400/400?random=5"
-    }
-];
 
 export default function About() {
     const containerRef = useRef<HTMLDivElement>(null);
     const innerRef = useRef<HTMLDivElement>(null);
+
+    const { t } = useTranslation();
+
+    const content = [
+        {
+            text: t("about.content.text1"),
+            img: vanessa
+        },
+        {
+            text: t("about.content.text2"),
+        },
+        {
+            text: t("about.content.text4"),
+        },
+        {
+            text: t("about.content.text5"),
+        },
+        {
+            text: t("about.content.text6"),
+            img: ai
+        }
+    ];
+
 
     useGSAP(() => {
         if (!containerRef.current) return;

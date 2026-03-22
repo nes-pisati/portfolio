@@ -1,8 +1,10 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import SplitText from "gsap/SplitText";
+import { useTranslation } from "react-i18next";
 
 export default function Technologies() {
+    const { t } = useTranslation();
 
     useGSAP(() => {
         const textSplit = new SplitText('#description', { type: 'lines' });
@@ -88,12 +90,12 @@ export default function Technologies() {
 
     return (
         <section id="technologies" className="padding-x py-10 h-screen md:mb-0 mb-20">
-            <h2 className="section-title">Technologies</h2>
-            <p id="description" className="tech-description py-10">I'm a frontend developer who enjoys building interfaces that are clean, functional, and easy to maintain. My stack is centered around JavaScript, React, and modern tooling, but I'm always open to learning new languages and frameworks.</p>
+            <h2 className="section-title">{t('technologies.title')}</h2>
+            <p id="description" className="tech-description py-10">{t('technologies.description')}</p>
             <div className="md:grid grid-cols-4 gap-10 py-10">
                 <div className="col-span-1 flex justify-between md:block">
                     <div id="frameworks">
-                        <p className="tech-title">Frame<br></br>works</p>
+                        <p className="tech-title">{t('technologies.frameworks').split('').map((char, i) => char === ' ' ? <br key={i} /> : char)}</p>
                         <ul className="pt-10">
                             <li className="tech-description framework-item">Angular</li>
                             <li className="tech-description framework-item">React</li>
@@ -113,7 +115,7 @@ export default function Technologies() {
                     </div>
                 </div>
                 <div id="languages" className="col-span-2 md:pt-0 pt-10">
-                    <p className="tech-title">Languages</p>
+                    <p className="tech-title">{t('technologies.languages')}</p>
                     <ul className="pt-10">
                         <li className="tech-description">TypeScript</li>
                         <li className="tech-description">JavaScript</li>
