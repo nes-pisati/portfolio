@@ -1,11 +1,12 @@
 import { useRef, useCallback } from 'react';
 import { useMediaQuery } from 'react-responsive'
 import gsap from 'gsap';
+import { Link } from 'react-router-dom';
 
-export default function HpProjectTitle({ title }: { title: string }) {
+export default function HpProjectTitle({ title, image, slug }: { title: string, image: string, slug: string }) {
     const isMobile = useMediaQuery({ maxWidth: 767 });
     const lineRef = useRef<HTMLSpanElement>(null);
-    const divRef = useRef<HTMLDivElement>(null);
+    const divRef = useRef<HTMLAnchorElement>(null);
     const imgRef = useRef<HTMLDivElement>(null);
     const xTo = useRef<ReturnType<typeof gsap.quickTo> | null>(null);
     const yTo = useRef<ReturnType<typeof gsap.quickTo> | null>(null);
@@ -68,7 +69,8 @@ export default function HpProjectTitle({ title }: { title: string }) {
     }, []);
 
     return (
-        <div
+        <Link
+            to={`/project/${slug}`}
             className="relative flex items-end cursor-pointer opacity-50"
             onMouseEnter={handleMouseEnter}
             onMouseLeave={handleMouseLeave}
@@ -81,15 +83,15 @@ export default function HpProjectTitle({ title }: { title: string }) {
 
             <div
                 ref={imgRef}
-                className="absolute bottom-8 left-1/2 -translate-x-1/2 pointer-events-none z-10"
+                className="absolute bottom-8 left-1/2 -translate-x-1/2 pointer-events-none z-10 w-75 h-75"
                 style={{ opacity: 0, transform: 'translateX(-50%) scale(0.8)' }}
             >
-                <img src="https://picsum.photos/200" alt="image" className='rounded-xl' />
+                <img src={image} alt="image" className='rounded-xl w-full h-full object-cover' />
             </div>
 
             <span ref={lineRef} className="border-b border-white h-8 ms-5 w-0 overflow-hidden"></span>
 
             <p className="hp-project-view ms-5">View</p>
-        </div>
+        </Link>
     )
 }
