@@ -71,7 +71,7 @@ p {
   font-family: var(--main-font);
   font-weight: 400;
 
-  @apply text-8xl
+  @apply text-8xl min-w-[40vw]
 }
 
 .hero-text-span {
@@ -244,12 +244,16 @@ p {
 }
 
 .project-info-row {
-  @apply flex flex-col md:flex-row justify-between gap-4 md:gap-0 w-[80vw] opacity-50;
+  @apply flex flex-col md:flex-row justify-between gap-4 md:gap-0 min-w-[50vw] opacity-50 my-10;
 }
 
 
 .project-info-technologies {
-  @apply flex flex-col items-start md:items-end gap-2 md:gap-10;
+  @apply flex flex-col items-start md:items-end gap-2 md:gap-6;
+}
+
+.project-info-row-further-technologies {
+  @apply flex flex-col items-start md:items-end gap-2 md:gap-6 w-[80vw] opacity-50 my-10;
 }
 
 .project-details-section {

@@ -17,11 +17,11 @@ export default function Intro() {
             <div>
                 <p className='opacity-20'>Lang</p>
             </div>
-            <div className='flex gap-10'>
-                <button onClick={() => handleLanguageSelect('it')} className='w-30 h-20 rounded-lg overflow-hidden'>
+            <div className='flex gap-6'>
+                <button onClick={() => handleLanguageSelect('it')} className='w-25 h-15 rounded-lg overflow-hidden'>
                     <img src={bandieraIT} alt="Italiano" className='w-full h-full object-cover' />
                 </button>
-                <button onClick={() => handleLanguageSelect('en')} className='w-30 h-20 rounded-lg overflow-hidden'>
+                <button onClick={() => handleLanguageSelect('en')} className='w-25 h-15 rounded-lg overflow-hidden'>
                     <img src={bandieraEN} alt="English" className='w-full h-full object-cover' />
                 </button>
             </div>
