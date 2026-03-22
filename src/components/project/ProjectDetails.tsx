@@ -5,10 +5,9 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 gsap.registerPlugin(ScrollTrigger, SplitText)
 
-export default function ProjectDetails() {
+export default function ProjectDetails({ name, descriptionText, descriptionImg }: { name: string, descriptionText: string, descriptionImg: string }) {
 
     useGSAP(() => {
-
         const mm = gsap.matchMedia()
 
 
@@ -132,18 +131,15 @@ export default function ProjectDetails() {
     return (
         <section className="project-details-section">
             <div className="project-details-content">
-                <h2 className="project-detail-title">Antidea</h2>
-                <p className="project-detail-description">
-                    Project Description
-                </p>
+                <h2 className="project-detail-title">{name}</h2>
 
                 <p className="tech-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita architecto quaerat quibusdam ipsam in quae odio, laborum veritatis dolorum pariatur delectus aperiam, aspernatur eius! Quis, itaque. Expedita architecto quaerat quibusdam ipsam in quae odio, laborum veritatis dolorum pariatur delectus aperiam, aspernatur eius! Quis, itaque.
+                    {descriptionText}
                 </p>
             </div>
 
             <img
-                src="https://images.unsplash.com/photo-1770386750279-1222d8f188a7?q=80&w=987&auto=format&fit=crop"
+                src={descriptionImg}
                 alt="Project foto"
                 className="project-details-img "
             />

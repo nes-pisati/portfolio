@@ -5,12 +5,11 @@ import { ScrollTrigger } from "gsap/ScrollTrigger"
 
 gsap.registerPlugin(ScrollTrigger)
 
-export default function ProjectHero() {
+export default function ProjectHero({ name, cover }: { name: string, cover: string }) {
 
     const sectionRef = useRef(null)
 
     useGSAP(() => {
-
         const mm = gsap.matchMedia()
 
         mm.add("(min-width: 1024px)", () => {
@@ -76,14 +75,14 @@ export default function ProjectHero() {
 
             <div className="project-hero-wrapper">
                 <img
-                    src="https://images.unsplash.com/photo-1770297345695-f7ca76dfb04d?q=80&w=2070&auto=format&fit=crop"
+                    src={cover}
                     alt="project hero"
                     className="project-hero-img"
                 />
             </div>
 
             <h1 className="project-hero-name">
-                ANTIDEA
+                {name}
             </h1>
 
         </section>
