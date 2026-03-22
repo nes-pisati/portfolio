@@ -1,6 +1,7 @@
 {
     "downloadCv": "DOWNLOAD MY CV",
     "goBack": "go back",
+    "goNext": "next project",
     "hero": {
         "greeting": "I'm",
         "role": "FRONTEND DEVELOPER"
@@ -10,7 +11,6 @@
         "content": {
             "text1": "I'm Vanessa, a 30-year-old frontend developer.",
             "text2": "According to Leonardo Di Caprio, I'm past my expiration date — but for coding, I'm still in excellent shape.",
-            "text3": "I'm still a Padawan? Yes, but every Jedi was once one too and with a great Jedi Master by my side I continue improving in the use of the force and constantly leveling up (bugs included).",
             "text4": "My background in branding trained my eye long before my hands touched code, which means UI and UX naturally influence the way I build and think interfaces.",
             "text5": "I like clean components, thoughtful interactions, and frontend code that doesn't fight back when you open it six months later (hopefully).",
             "text6": "And last but not least. If you're wondering how I move within a team, this is how artificial intelligence feels working together with me. Need I say more?"

@@ -1,6 +1,7 @@
 {
     "downloadCv": "SCARICA IL MIO CV",
     "goBack": "indietro",
+    "goNext": "prossimo progetto",
     "hero": {
         "greeting": "sono",
         "role": "FRONTEND DEVELOPER"
@@ -10,7 +11,6 @@
         "content": {
             "text1": "Sono Vanessa, una sviluppatrice frontend di 30 anni.",
             "text2": "Secondo Leonardo Di Caprio ho superato la mia data di scadenza, ma per il codice sono ancora in perfetta forma.",
-            "text3": "Sono ancora un Padawan? Sì, ma ogni Jedi lo è stato e con un grande Maestro Jedi al mio fianco continuo a migliorare nell'uso della forza e a salire di livello (bug inclusi).",
             "text4": "Il mio background nel branding ha allenato il mio occhio molto prima che le mie mani toccassero il codice, il che significa che UI e UX influenzano naturalmente il modo in cui costruisco e penso le interfacce.",
             "text5": "Mi piacciono i componenti puliti, le interazioni curate e il codice frontend che non ti prende a pugni in faccia quando lo riapri sei mesi dopo (si spera).",
             "text6": "E ultimo, ma non meno importante. Se ti stai chiedendo come mi muovo all'interno di un team, questo è come si sente l'intelligenza artificiale a lavorare insieme a me. Devo aggiungere altro?"

@@ -19,8 +19,20 @@ import modi2 from "../assets/projects/modi/modì2.png"
 import modi3 from "../assets/projects/modi/modì3.png"
 import modi4 from "../assets/projects/modi/modì4.jpg"
 
+export interface Project {
+    slug: string;
+    cover: string;
+    descriptionImg: string;
+    images: string[];
+    repoUrl?: string;
+    liveUrl?: string;
+    frontendRepoUrl?: string;
+    backendRepoUrl?: string;
+    technologies: string[];
+    furtherTechnologies?: string[];
+}
 
-export const projects = [
+export const projects: Project[] = [
     {
         slug: "antidea",
         cover: antidea_main,
