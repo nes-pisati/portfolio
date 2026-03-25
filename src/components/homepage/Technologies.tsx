@@ -89,7 +89,7 @@ export default function Technologies() {
     })
 
     return (
-        <section id="technologies" className="padding-x py-10 h-screen md:mb-0 mb-20">
+        <section id="technologies" className="px-6 md:px-20 py-10 h-screen md:mb-0 mb-20">
             <h2 className="section-title">{t('technologies.title')}</h2>
             <p id="description" className="tech-description py-10">{t('technologies.description')}</p>
             <div className="md:grid grid-cols-4 gap-10 py-10">

@@ -10,7 +10,7 @@ export default function Footer() {
     const linkedin = "https://www.linkedin.com/in/nes-pisati";
 
     return (
-        <footer className="padding-x py-10">
+        <footer className="px-6 md:px-20 py-10">
             <p className="section-title">{t("contacts.title")}</p>
             <ul className="flex justify-between pt-10 md:pt-20 pb-10">
                 <li className="transition-all duration-300 text-xs md:text-base">

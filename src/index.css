@@ -28,19 +28,12 @@
 html,
 body {
   width: 100%;
+  /* overflow-x: clip; */
   background-color: black;
   color: white;
   scroll-behavior: smooth;
   font-family: var(--main-font);
   padding: 0 1em;
-}
-
-@media (min-width: 768px) {
-
-  html,
-  body {
-    padding: 0 4em;
-  }
 }
 
 p {
@@ -71,7 +64,7 @@ p {
   font-family: var(--main-font);
   font-weight: 400;
 
-  @apply text-8xl min-w-[40vw]
+  @apply text-8xl md:min-w-[40vw]
 }
 
 .hero-text-span {
@@ -113,20 +106,7 @@ p {
   will-change: opacity, transform;
 }
 
-@media (min-width: 768px) {
-  .about-item {
-    flex-direction: row;
-    gap: 5rem;
-    padding: 0 4em;
-  }
-}
 
-@media (max-width: 767px) {
-  .about-item {
-    flex-direction: column;
-    gap: 1.5rem;
-  }
-}
 
 .about-text {
   font-family: var(--main-font);
@@ -135,12 +115,6 @@ p {
   text-align: justify;
 }
 
-@media (min-width: 768px) {
-  .about-text {
-    font-size: 3rem;
-    text-align: left;
-  }
-}
 
 .about-item-img {
   width: 70%;
@@ -150,13 +124,6 @@ p {
   flex-shrink: 0;
   opacity: 0;
   will-change: opacity, transform;
-}
-
-@media (min-width: 768px) {
-  .about-item-img {
-    width: 40%;
-    max-width: 400px;
-  }
 }
 
 .tech-description {
@@ -184,19 +151,10 @@ p {
 }
 
 
-@utility flex-center {
-  @apply flex justify-center items-center;
-}
-
-@utility padding-x {
-  @apply pl-6 pr-6 md:pl-20 md:pr-20
-}
-
 .project-hero-section {
   position: relative;
   height: 100vh;
   width: 100vw;
-
   left: 50%;
   transform: translateX(-50%);
   overflow: hidden;
@@ -221,12 +179,12 @@ p {
   position: absolute;
   top: 50%;
   left: 0;
-  transform: translateY(-50%);
-  font-size: 35vw;
+  transform: translateY(-40%);
+  font-size: 50vw;
   font-weight: 600;
   white-space: nowrap;
   letter-spacing: -0.05em;
-  z-index: 10;
+  z-index: 100;
   will-change: transform;
   pointer-events: none;
 }
@@ -240,7 +198,7 @@ p {
 }
 
 .project-info-section {
-  @apply flex flex-col justify-between py-20 md:py-40 min-h-screen h-auto w-full;
+  @apply flex flex-col justify-start pb-10 md:pb-0 md:justify-between py-0 md:py-40 md:min-h-screen h-auto w-full;
 }
 
 .project-info-row {
@@ -257,7 +215,7 @@ p {
 }
 
 .project-details-section {
-  @apply relative flex flex-col md:grid md:grid-cols-2 gap-10 md:gap-20 py-20 min-h-screen md:h-[150vh] overflow-hidden;
+  @apply relative flex flex-col md:grid md:grid-cols-2 gap-10 md:gap-20 py-20 md:min-h-screen md:h-[150vh] overflow-hidden;
 }
 
 .project-details-content {
@@ -317,11 +275,11 @@ p {
 }
 
 .images-grid-bottom-img-1 {
-  @apply h-[50vh] md:h-[60vh] w-full md:w-[30vw] object-cover;
+  @apply h-[50vh] md:h-[80vh] w-full md:w-[35vw] object-cover;
 }
 
 .images-grid-bottom-img-2 {
-  @apply h-[50vh] md:h-[60vh] w-full md:w-[25vw] object-cover;
+  @apply h-[50vh] md:h-[80vh] w-full md:w-[35vw] object-cover;
 }
 
 .divisor-section {
@@ -358,7 +316,6 @@ p {
     font-size: 1.5em;
   }
 
-
   .tech-title {
     font-size: 2em;
   }
@@ -369,6 +326,30 @@ p {
 
   .project-hero-name {
     font-size: 18vw;
+  }
+
+  .about-item {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+}
+
+@media (min-width: 768px) {
+  .about-item {
+    flex-direction: row;
+    gap: 5rem;
+    padding: 0 4em;
+  }
+
+  .about-text {
+    font-size: 3rem;
+    text-align: left;
+  }
+
+  .about-item-img {
+    width: 40%;
+    max-width: 400px;
   }
 }
 
