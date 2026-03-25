@@ -12,8 +12,8 @@ export default function Footer() {
     return (
         <footer className="padding-x py-10">
             <p className="section-title">{t("contacts.title")}</p>
-            <ul className="flex justify-between pt-20 pb-10">
-                <li className="transition-all duration-300">
+            <ul className="flex justify-between pt-10 md:pt-20 pb-10">
+                <li className="transition-all duration-300 text-xs md:text-base">
                     <a
                         href={`mailto:${email}`}
                         onMouseEnter={() => setIsHoveredEmail(true)}
@@ -28,10 +28,10 @@ export default function Footer() {
                         </span>
                     </a>
                 </li>
-                <li>
+                <li className="text-xs md:text-base">
                     <a href={github} target="_blank" rel="noopener noreferrer">.GitHub</a>
                 </li>
-                <li>
+                <li className="text-xs md:text-base">
                     <a href={linkedin} target="_blank" rel="noopener noreferrer">.LinkedIn</a>
                 </li>
             </ul>

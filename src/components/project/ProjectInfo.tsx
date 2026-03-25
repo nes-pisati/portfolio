@@ -12,32 +12,32 @@ export default function ProjectInfo({ details, technologies, furtherTechnologies
     return (
         <section className="project-info-section">
             <div className="project-info-row">
-                <p>DETAILS</p>
-                <p className="underline md:text-base text-xs">{details}</p>
+                <span>DETAILS</span>
+                <span className="underline md:text-base text-xs">{details}</span>
             </div>
 
             <div className={furtherTechnologies && furtherTechnologies.length > 0 ? "flex flex-col md:flex-row gap-5 md:gap-10" : ""}>
                 <div className="project-info-row">
-                    <p>TECHNOLOGIES</p>
+                    <span>TECHNOLOGIES</span>
                     <div className="project-info-technologies">
                         {technologies.map((tech, index) => (
-                            <p key={index} className="underline md:text-base text-xs">{tech}</p>
+                            <span key={index} className="underline md:text-base text-xs">{tech}</span>
                         ))}
                     </div>
                 </div>
                 {furtherTechnologies && furtherTechnologies.length > 0 && (
                     <div className="project-info-row-further-technologies">
-                        <p>FURTHER TECHNOLOGIES</p>
+                        <span>FURTHER TECHNOLOGIES</span>
                         <div className="project-info-technologies">
                             {furtherTechnologies.map((tech, index) => (
-                                <p key={index} className="underline md:text-base text-xs">{tech}</p>
+                                <span key={index} className="underline md:text-base text-xs">{tech}</span>
                             ))}
                         </div>
                     </div>
                 )}
             </div>
             <div className="project-info-row">
-                <p>SEE MORE</p>
+                <span>SEE MORE</span>
                 <div className="flex flex-col md:flex-row gap-5 md:gap-10">
                     {liveUrl && <a href={liveUrl} target="_blank" rel="noreferrer" className="underline md:text-base text-xs">Visit Website</a>}
                     {repoUrl && <a href={repoUrl} target="_blank" rel="noreferrer" className="underline md:text-base text-xs">View Code</a>}

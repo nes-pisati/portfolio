@@ -23,7 +23,7 @@ export default function FooterNavigation() {
     }
 
     return (
-        <div className="py-20">
+        <div className="py-10 md:py-20">
             <div className="flex justify-between">
                 <div className="flex">
                     <p className="menu-item" onClick={handleNavigateBack}>&lt; {t("goBack")}</p>

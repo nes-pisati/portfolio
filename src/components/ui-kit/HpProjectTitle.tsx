@@ -83,7 +83,7 @@ export default function HpProjectTitle({ title, image, slug }: { title: string, 
 
             <div
                 ref={imgRef}
-                className="absolute bottom-8 left-1/2 -translate-x-1/2 pointer-events-none z-10 w-75 h-75"
+                className="absolute bottom-8 left-1/2 -translate-x-1/2 pointer-events-none z-10 w-40 h-40 md:w-75 md:h-75"
                 style={{ opacity: 0, transform: 'translateX(-50%) scale(0.8)' }}
             >
                 <img src={image} alt="image" className='rounded-xl w-full h-full object-cover' />
