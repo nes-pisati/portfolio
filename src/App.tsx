@@ -5,6 +5,7 @@ import Project from "./pages/Project"
 import Footer from "./components/ui-kit/Footer"
 import Intro from "./components/intro"
 import ScrollToTop from "./components/ui-kit/ScrollToTop"
+import CustomCursor from "./components/ui-kit/CustomCursor"
 
 function AppContent() {
   const location = useLocation();
@@ -13,6 +14,7 @@ function AppContent() {
 
   return (
     <>
+      <CustomCursor />
       {!isIntro && <Menu backEnabled={isProject} />}
       <Routes>
         <Route path="/" element={<Intro />} />
