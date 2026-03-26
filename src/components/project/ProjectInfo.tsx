@@ -54,7 +54,3 @@ export default function ProjectInfo({ details, technologies, furtherTechnologies
         </section>
     )
 }
-
-function useTranslations(arg0: string) {
-    throw new Error("Function not implemented.");
-}
