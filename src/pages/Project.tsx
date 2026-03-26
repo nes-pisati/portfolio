@@ -23,7 +23,7 @@ export default function Project() {
     const projectT = t(`projects:${slug}`, { returnObjects: true }) as any;
 
     return (
-        <>
+        <div key={slug}>
             <ProjectHero name={projectT.name} cover={project.cover} />
             <ProjectInfo
                 details={projectT.details}
@@ -42,6 +42,6 @@ export default function Project() {
             />
             <ImagesGrid images={project.images} />
             <FooterNavigation />
-        </>
+        </div>
     )
 }

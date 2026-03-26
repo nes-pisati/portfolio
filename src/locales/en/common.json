@@ -31,7 +31,16 @@
         "seeMore": "SEE MORE",
         "visitWebsite": "Visit Website",
         "viewCode": "View Code",
-        "projectPlaylist": "Project Playlist"
+        "info": {
+            "details": "DETAILS",
+            "technologies": "TECHNOLOGIES",
+            "furtherTechnologies": "FURTHER TECHNOLOGIES",
+            "seeMore": "SEE MORE",
+            "visitWebsite": "Visit Website",
+            "viewCode": "View Code",
+            "frontendRepoUrl": "View Frontend Code",
+            "backendRepoUrl": "View Backend Code"
+        }
     },
     "contacts": {
         "title": "Contacts"

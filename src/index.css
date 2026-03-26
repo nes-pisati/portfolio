@@ -177,10 +177,10 @@ p {
 
 .project-hero-name {
   position: absolute;
-  top: 50%;
+  top: 60%;
   left: 0;
-  transform: translateY(-40%);
-  font-size: 50vw;
+  transform: translateY(-50%);
+  font-size: 45vw;
   font-weight: 600;
   white-space: nowrap;
   letter-spacing: -0.05em;

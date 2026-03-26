@@ -37,7 +37,7 @@ export default function SlidingText() {
     return (
         <>
             <BlackShade>
-                <div className="relative overflow-hidden bg-yellow h-[15vh] md:h-[45vh] md:opacity-100 opacity-20">
+                <div className="relative overflow-hidden bg-yellow h-[15vh] md:h-[45vh] md:opacity-40 opacity-20">
                     <div className="sliding-text-container bg-pink">
                         {words.map((word, i) => (
                             <p key={`orig-${i}`} className="sliding-text">{word}</p>

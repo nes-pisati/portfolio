@@ -41,7 +41,7 @@ export default function Projects() {
                             <HpProjectTitle title="Antidea" image={antidea_main} slug="antidea" />
                         </div>
                     </div>
-                    <div className="project-item">
+                    <div className="project-item self-start md:self-center">
                         <HpProjectTitle title="Iron Jiu Jitsu" image={ijj_main} slug="iron-jiu-jitsu" />
                     </div>
                 </div>

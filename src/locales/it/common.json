@@ -31,7 +31,16 @@
         "seeMore": "SCOPRI DI PIÙ",
         "visitWebsite": "Visita Sito",
         "viewCode": "Vedi Codice",
-        "projectPlaylist": "Playlist del Progetto"
+        "info": {
+            "details": "DETTAGLI",
+            "technologies": "TECNOLOGIE",
+            "furtherTechnologies": "ULTERIORI TECNOLOGIE",
+            "seeMore": "SCOPRI DI PIÙ",
+            "visitWebsite": "Visita Sito",
+            "viewCode": "Vedi Codice",
+            "frontendRepoUrl": "Vedi Codice Frontend",
+            "backendRepoUrl": "Vedi Codice Backend"
+        }
     },
     "contacts": {
         "title": "Contatti"
