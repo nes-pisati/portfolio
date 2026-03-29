@@ -3,7 +3,7 @@
     "goBack": "go back",
     "goNext": "next project",
     "hero": {
-        "greeting": "I'm",
+        "greeting": "Hello, I'm",
         "role": "FRONTEND DEVELOPER"
     },
     "about": {

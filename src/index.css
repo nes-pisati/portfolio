@@ -41,6 +41,14 @@ p {
   font-size: 1.25em;
 }
 
+.intro-text {
+  font-size: 0.8rem;
+  opacity: 0.4;
+  font-weight: 200;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
 .section-title {
   font-family: var(--main-font);
   font-weight: 400;
@@ -64,12 +72,9 @@ p {
   font-family: var(--main-font);
   font-weight: 400;
 
-  @apply text-8xl md:min-w-[40vw]
+  @apply text-6xl md:min-w-[40vw]
 }
 
-.hero-text-span {
-  font-family: var(--secondary-font);
-}
 
 .sliding-text {
   font-family: var(--main-font);

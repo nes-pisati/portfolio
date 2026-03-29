@@ -49,7 +49,7 @@ export default function Hero() {
                     </div>
                 </div>
                 <div className="h-[75vh] flex flex-col items-center justify-center gap-6 md:justify-between absolute top-30 left-4 right-4 md:left-40 md:right-40">
-                    <p className="hero-text text-center md:text-left"><span className="hero-text-span">H</span>e<span className="hero-text-span">ll</span>o, {t('hero.greeting')}</p>
+                    <p className="hero-text text-center md:text-right">{t('hero.greeting')}</p>
                     <div className="block md:hidden">
                         <SlidingText />
                     </div>

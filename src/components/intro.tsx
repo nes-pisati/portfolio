@@ -47,12 +47,12 @@ export default function Intro() {
     };
 
     return (
-        <section ref={sectionRef} className="relative h-screen flex flex-col justify-center items-center overflow-hidden bg-black">
-            <div className="bg-glow absolute w-[500px] h-[500px] bg-blue-500/20 rounded-full blur-[120px] -z-10 opacity-0" />
+        <section ref={sectionRef} className="fixed inset-0 z-50 flex flex-col justify-center items-center overflow-hidden bg-black touch-action-none overscroll-none" style={{ touchAction: 'none', overscrollBehavior: 'none' }}>
+            <div className="bg-glow absolute w-[min(500px,100vw)] h-[min(500px,100vh)] bg-blue-500/20 rounded-full blur-[120px] -z-10 opacity-0" />
 
             <div ref={contentRef} className="flex flex-col items-center gap-8 md:gap-10">
                 <div className="intro-item">
-                    <p className="text-xs tracking-[0.3em] uppercase opacity-40 font-light">Select Language</p>
+                    <p className="intro-text">Select Language</p>
                 </div>
 
                 <div className="flex gap-6 intro-item">
