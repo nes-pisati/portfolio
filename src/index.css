@@ -303,44 +303,29 @@ p {
   @apply will-change-transform;
 }
 
-.images-grid-section {
-  @apply grid grid-cols-1 md:grid-cols-3 gap-5 py-10;
+.slideshow-section {
+  @apply py-10;
 }
 
-.images-grid-left-col {
-  @apply col-span-1;
+.slideshow-track {
+  @apply flex gap-5 overflow-x-auto snap-x snap-mandatory cursor-grab select-none;
+  overscroll-behavior-x: contain;
 }
 
-.images-grid-left-img {
-  @apply h-[50vh] md:h-full w-full object-cover;
+.slideshow-track.is-dragging {
+  @apply cursor-grabbing snap-none;
 }
 
-.images-grid-right-col {
-  @apply col-span-1 md:col-span-2;
+.slideshow-image {
+  @apply h-[45vh] md:h-[75vh] w-auto max-w-none shrink-0 snap-start rounded-2xl object-contain;
 }
 
-.images-grid-right-inner {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-5;
+.slideshow-controls {
+  @apply flex justify-end gap-3 pt-5;
 }
 
-.images-grid-full-span {
-  @apply col-span-1 md:col-span-2;
-}
-
-.images-grid-top-img {
-  @apply h-[50vh] w-full object-cover;
-}
-
-.images-grid-bottom-row {
-  @apply grid grid-cols-1 md:grid-cols-2 gap-5;
-}
-
-.images-grid-bottom-img-1 {
-  @apply h-[50vh] md:h-[80vh] w-full object-cover;
-}
-
-.images-grid-bottom-img-2 {
-  @apply h-[50vh] md:h-[80vh] w-full object-cover;
+.slideshow-button {
+  @apply w-12 h-12 flex items-center justify-center rounded-full border border-white text-xl transition-opacity duration-300 disabled:opacity-30 disabled:cursor-default;
 }
 
 .divisor-section {
