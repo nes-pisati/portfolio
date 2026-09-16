@@ -71,20 +71,22 @@ export default function ProjectHero({ name, cover }: { name: string, cover: stri
     }, [])
 
     return (
-        <section ref={sectionRef} className="project-hero-section">
+        <div className="project-hero-bleed">
+            <section ref={sectionRef} className="project-hero-section">
 
-            <div className="project-hero-wrapper">
-                <img
-                    src={cover}
-                    alt="project hero"
-                    className="project-hero-img"
-                />
-            </div>
+                <div className="project-hero-wrapper">
+                    <img
+                        src={cover}
+                        alt="project hero"
+                        className="project-hero-img"
+                    />
+                </div>
 
-            <h1 className="project-hero-name">
-                {name}
-            </h1>
+                <h1 className="project-hero-name">
+                    {name}
+                </h1>
 
-        </section>
+            </section>
+        </div>
     )
 }

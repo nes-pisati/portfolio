@@ -21,6 +21,7 @@ import modi4 from "../assets/projects/modi/modì4.jpg"
 
 export interface Project {
     slug: string;
+    year: number;
     cover: string;
     descriptionImg: string;
     images: string[];
@@ -35,6 +36,7 @@ export interface Project {
 export const projects: Project[] = [
     {
         slug: "antidea",
+        year: 2025,
         cover: antidea_main,
         descriptionImg: antidea_description,
         images: [antidea1, antidea2, antidea4, antidea5],
@@ -44,6 +46,7 @@ export const projects: Project[] = [
     },
     {
         slug: "iron-jiu-jitsu",
+        year: 2025,
         cover: ijj_main,
         descriptionImg: ijj_description,
         images: [ijj1, ijj2, ijj3, ijj4],
@@ -54,6 +57,7 @@ export const projects: Project[] = [
     },
     {
         slug: "modi",
+        year: 2024,
         cover: modi_main,
         descriptionImg: modi_description,
         images: [modi3, modi4, modi2, modi1],

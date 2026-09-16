@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next";
 
 interface ProjectInfoProps {
     details: string;
+    year: number;
     technologies: string[];
     furtherTechnologies?: string[];
     repoUrl?: string;
@@ -10,7 +11,7 @@ interface ProjectInfoProps {
     liveUrl?: string;
 }
 
-export default function ProjectInfo({ details, technologies, furtherTechnologies, repoUrl, frontendRepoUrl, backendRepoUrl, liveUrl }: ProjectInfoProps) {
+export default function ProjectInfo({ details, year, technologies, furtherTechnologies, repoUrl, frontendRepoUrl, backendRepoUrl, liveUrl }: ProjectInfoProps) {
     const { t } = useTranslation();
 
     return (
@@ -18,6 +19,11 @@ export default function ProjectInfo({ details, technologies, furtherTechnologies
             <div className="project-info-row">
                 <span>{t("projects.info.details")}</span>
                 <span className="underline md:text-base text-xs">{details}</span>
+            </div>
+
+            <div className="project-info-row">
+                <span>{t("projects.info.year")}</span>
+                <span className="underline md:text-base text-xs">{year}</span>
             </div>
 
             <div className={furtherTechnologies && furtherTechnologies.length > 0 ? "flex flex-col md:flex-row gap-5 md:gap-10" : ""}>

@@ -64,8 +64,9 @@ export default function ProjectDetails({ name, descriptionText, descriptionImg }
                 opacity: 0.25,
                 scale: 1,
                 y: 0,
+                duration: 1.6,
                 ease: "none"
-            })
+            }, 0)
         })
 
         mm.add("(max-width: 1023px)", () => {
@@ -102,7 +103,7 @@ export default function ProjectDetails({ name, descriptionText, descriptionImg }
                 ease: "power2.out",
                 scrollTrigger: {
                     trigger: ".project-details-img",
-                    start: "top 85%",
+                    start: "top 95%",
                     toggleActions: "play none none none",
                 }
             })
@@ -138,6 +139,9 @@ export default function ProjectDetails({ name, descriptionText, descriptionImg }
             <img
                 src={descriptionImg}
                 alt="Project foto"
+                loading="eager"
+                decoding="async"
+                fetchPriority="high"
                 className="project-details-img "
             />
         </section>

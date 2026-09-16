@@ -27,6 +27,7 @@ export default function Project() {
             <ProjectHero name={projectT.name} cover={project.cover} />
             <ProjectInfo
                 details={projectT.details}
+                year={project.year}
                 technologies={project.technologies}
                 furtherTechnologies={project.furtherTechnologies}
                 repoUrl={project.repoUrl}
