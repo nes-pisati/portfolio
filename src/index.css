@@ -131,6 +131,60 @@ p {
   will-change: opacity, transform;
 }
 
+.about-scroll-hint {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  translate: -50% 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.about-scroll-line {
+  position: relative;
+  width: 1px;
+  height: 3rem;
+  overflow: hidden;
+  background-color: rgb(255 255 255 / 0.2);
+}
+
+.about-scroll-line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: white;
+  animation: about-scroll-line 1.8s ease-in-out infinite;
+}
+
+@keyframes about-scroll-line {
+  0% { transform: translateY(-100%); }
+  100% { transform: translateY(100%); }
+}
+
+.about-progress {
+  position: absolute;
+  bottom: 1rem;
+  left: 1em;
+  right: 1em;
+  height: 1px;
+  background-color: rgb(255 255 255 / 0.15);
+  pointer-events: none;
+}
+
+.about-progress-bar {
+  height: 100%;
+  background-color: white;
+  transform: scaleX(0);
+  transform-origin: left;
+}
+
 .tech-description {
   @apply text-sm opacity-50 w-screen text-justify md:text-left;
 }

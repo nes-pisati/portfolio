@@ -29,7 +29,7 @@ export default function SlidingText() {
             duration: 10,
             ease: "none",
             repeat: -1,
-        });
+        }, "<0.2");
     });
 
     const words = Array(5).fill("FRONTEND DEVELOPER");

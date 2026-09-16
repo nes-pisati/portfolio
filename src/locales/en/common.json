@@ -7,6 +7,7 @@
         "role": "FRONTEND DEVELOPER"
     },
     "about": {
+        "scroll": "scroll",
         "title": "About",
         "content": {
             "text1": "I'm Vanessa, a 30-year-old frontend developer.",

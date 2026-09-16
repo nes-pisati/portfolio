@@ -7,6 +7,7 @@
         "role": "FRONTEND DEVELOPER"
     },
     "about": {
+        "scroll": "scorri",
         "title": "Chi sono",
         "content": {
             "text1": "Sono Vanessa, una sviluppatrice frontend di 30 anni.",

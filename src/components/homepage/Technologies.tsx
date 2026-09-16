@@ -100,13 +100,14 @@ export default function Technologies() {
                             <li className="tech-description framework-item">Angular</li>
                             <li className="tech-description framework-item">React</li>
                             <li className="tech-description framework-item">React Native</li>
+                            <li className="tech-description framework-item">NextJS</li>
                         </ul>
                     </div>
                     <div className="md:hidden">
                         <ul className="pt-10">
                             <li className="tech-description tools-item">Html</li>
                             <li className="tech-description tools-item">CSS</li>
-                            <li className="tech-description tools-item">Sass</li>
+                            <li className="tech-description tools-item">Sass/Scss</li>
                             <li className="tech-description tools-item">Tailwind</li>
                             <li className="tech-description tools-item">Gsap</li>
                             <li className="tech-description tools-item">Node JS</li>
