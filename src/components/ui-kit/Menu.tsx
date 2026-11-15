@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 import { useNavigate } from "react-router-dom";
-import cvEng from "../../assets/CV ENG.pdf";
-import cvIta from "../../assets/CV ITA.pdf";
+import cvEng from "../../assets/CV-EN-PisatiVanessa.pdf";
+import cvIta from "../../assets/CV-ITA-PisatiVanessa.pdf";
 
 interface MenuProps {
     backEnabled?: boolean;
@@ -16,7 +16,9 @@ export default function Menu({ backEnabled }: MenuProps) {
         navigate('/home');
     }
 
-    const cvUrl = i18n.language.startsWith('it') ? cvIta : cvEng;
+    const isItalian = i18n.language.startsWith('it');
+    const cvUrl = isItalian ? cvIta : cvEng;
+    const cvFileName = isItalian ? "CV-ITA-PisatiVanessa.pdf" : "CV-EN-PisatiVanessa.pdf";
 
     return (
         <>
@@ -30,8 +32,7 @@ export default function Menu({ backEnabled }: MenuProps) {
                     <li className="list-none">
                         <a
                             href={cvUrl}
-                            target="_blank"
-                            rel="noopener noreferrer"
+                            download={cvFileName}
                             className="menu-item block"
                         >
                             {t("downloadCv")}
